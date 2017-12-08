@@ -4,13 +4,19 @@
 import java.util.*;
 import java.io.*;
 
+
+/*
+    This is a simple program that will simulate trials of Blackjack games
+    based on a decision rule that the client provides. Statistics will be
+    outputted every 10% interval. If the client does not provide the
+    preferences, the program will assume the defaults.
+*/
+
 public class BlackJackSim {
 
     public static final int NUM_DECKS  = 6;
     public static final boolean SPAN_21 = false;
     public static final int NUM_TRIALS = 1000;
-
-
 
 
     public static void main(String[] args) {
@@ -75,7 +81,7 @@ public class BlackJackSim {
         System.out.println("Number of hands played: " + dummy);
         System.out.println("Wins: " + dummy);
         System.out.println("Losses: " + dummy);
-        System.out.println("Pushed: ");
+        System.out.println("Pushed: " + dummy);
         System.out.println("Percent Won: " + dummy);
     }
 }
