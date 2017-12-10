@@ -20,7 +20,7 @@ public class BlackJackSim {
 
 
     public static void main(String[] args) {
-        Map<String, List<INTEGER>> key = new HashMap<String, List<INTEGER>>();
+        Map<String, List<Integer>> key = new HashMap<String, List<Integer>>();
         String settings[6] = {SPAN_21, NUM_DECKS, };
         welcomeMessage();
         setPrefs(settings);
@@ -58,12 +58,12 @@ public class BlackJackSim {
         System.out.println();
     }
 
-    public static void initializeValMap(Map<<CHARACTER>, <INTEGER>> vals) {
+    public static void initializeValMap(Map<<Character>, <Integer>> vals) {
 
     }
 
     public static void peformTrials(String[] settings, values, ) {
-        Map<<CHARACTER>, <INTEGER>> deckCount = new HashMap<<CHARACTER>, <INTEGER>>();
+        Map<<Character>, <Integer>> deckCount = new HashMap<<Character>, <Integer>>();
         int wins = 0;
         int losses = 0
         int pushed = 0;
@@ -75,13 +75,13 @@ public class BlackJackSim {
         }
     }
 
-
-    public static void printStats(int wins, ) {
+    public static void printStats(int trials, int wins, int losses) {
         int dummy = 0;
         System.out.println("Number of hands played: " + dummy);
         System.out.println("Wins: " + dummy);
         System.out.println("Losses: " + dummy);
         System.out.println("Pushed: " + dummy);
         System.out.println("Percent Won: " + dummy);
+        System.out.println();
     }
 }
