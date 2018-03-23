@@ -24,7 +24,7 @@ public class BlackJackSim {
         String settings[6] = {SPAN_21, NUM_DECKS, };
         welcomeMessage();
         setPrefs(settings);
-        initializeValMap(key);
+        initValMap(key, settings);
         performTrials(settings);
     }
 
@@ -58,8 +58,9 @@ public class BlackJackSim {
         System.out.println();
     }
 
-    public static void initializeValMap(Map<<Character>, <Integer>> vals) {
-
+    public static void initValMap(Map<<Character>, <Integer>> vals,
+                                        String[] settings) {
+        
     }
 
     public static void peformTrials(String[] settings, values, ) {
