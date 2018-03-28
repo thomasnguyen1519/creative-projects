@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(1000, 1000);
   angleMode(DEGREES);
 }
 
@@ -20,7 +20,7 @@ function draw() {
 
   noStroke();
   fill(255);
-  translate(200, 200);
+  translate(500, 300);
   textFont('Roboto');
 
   if (min < 10) {
@@ -38,9 +38,9 @@ function draw() {
   fill(173, 255, 47);
   text(displaySec, -75, 30);
   fill(230, 255, 0);
+  textStyle(NORMAL);
   text(ampm, -75, 70);
   textSize(25);
-  textStyle(NORMAL);
   fill(0, 90, 0);
   text(' hour(s)', -5, -50);
   fill(0, 128, 0);
