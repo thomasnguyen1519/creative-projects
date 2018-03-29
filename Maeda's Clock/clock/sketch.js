@@ -32,21 +32,21 @@ function draw() {
   textSize(45);
   textStyle(BOLD);
   fill(0, 90, 0);
-  text(hr % 12, -75, -50);
+  text(hr % 12, -25, -50);
   fill(0, 128, 0);
-  text(displayMin, -75, -10);
+  text(displayMin, -25, -10);
   fill(173, 255, 47);
-  text(displaySec, -75, 30);
+  text(displaySec, -25, 30);
   fill(230, 255, 0);
   textStyle(NORMAL);
-  text(ampm, -75, 70);
-  textSize(25);
-  fill(0, 90, 0);
-  text(' hour(s)', -5, -50);
-  fill(0, 128, 0);
-  text(' minute(s)', -5, -10);
-  fill(173, 255, 47);
-  text(' second(s)', -5, 30);
+  text(ampm, -25, 70);
+  // textSize(25);
+  // fill(0, 90, 0);
+  // text(' hour(s)', -5, -50);
+  // fill(0, 128, 0);
+  // text(' minute(s)', -5, -10);
+  // fill(173, 255, 47);
+  // text(' second(s)', -5, 30);
 
 
 
