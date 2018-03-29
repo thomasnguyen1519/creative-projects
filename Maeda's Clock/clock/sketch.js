@@ -20,7 +20,7 @@ function draw() {
 
   noStroke();
   fill(255);
-  translate(500, 300);
+  translate(500, 400);
   textFont('Roboto');
 
   if (min < 10) {
@@ -29,17 +29,21 @@ function draw() {
   if (sec < 10) {
       displaySec = '0' + sec;
   }
-  textSize(45);
+  textSize(90);
   textStyle(BOLD);
-  fill(0, 90, 0);
-  text(hr % 12, -25, -50);
-  fill(0, 128, 0);
-  text(displayMin, -25, -10);
+  fill(0, 80, 0);
+  if (hr == 0) {
+      text('12', -55, -95);
+  } else {
+      text(hr % 12, -55, -95);
+  }
+  fill(0, 145, 0);
+  text(displayMin, -55, -15);
   fill(173, 255, 47);
-  text(displaySec, -25, 30);
+  text(displaySec, -55, 65);
   fill(230, 255, 0);
   textStyle(NORMAL);
-  text(ampm, -25, 70);
+  text(ampm, -55, 145);
   // textSize(25);
   // fill(0, 90, 0);
   // text(' hour(s)', -5, -50);
@@ -50,12 +54,12 @@ function draw() {
 
 
 
-  strokeWeight(8);
+  strokeWeight(12);
   stroke(35);
   noFill();
-  ellipse(0, 0, 300, 300);
-  ellipse(0, 0, 280, 280);
-  ellipse(0, 0, 260, 260);
+  ellipse(0, 0, 500, 500);
+  ellipse(0, 0, 465, 465);
+  ellipse(0, 0, 430, 430);
 
   rotate(-90);
 
@@ -64,11 +68,11 @@ function draw() {
   var hrPos = map(hr % 12, 0, 12, 0, 360);
 
   stroke(173, 255, 47);
-  arc(0, 0, 260, 260, 0, secPos);
+  arc(0, 0, 430, 430, 0, secPos);
   stroke(0, 128, 0);
-  arc(0, 0, 280, 280, 0, minPos);
+  arc(0, 0, 465, 465, 0, minPos);
   stroke(0, 90, 0);
-  arc(0, 0, 300, 300, 0, hrPos);
+  arc(0, 0, 500, 500, 0, hrPos);
 
 
 
